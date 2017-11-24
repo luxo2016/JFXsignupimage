@@ -10,6 +10,8 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -20,76 +22,79 @@
             <Image url="@boy.png" />
          </image>
       </ImageView>
-      <SplitPane dividerPositions="0.5" prefHeight="562.0" prefWidth="946.0" style="-fx-background-color: #7d01aeaa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.5" prefHeight="562.0" prefWidth="946.0" style="-fx-background-color: #7d01ae00;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="500.0" prefHeight="160.0" prefWidth="100.0">
+          <AnchorPane minHeight="0.0" minWidth="500.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #B27E63CC;">
                <children>
-                  <Label layoutX="127.0" layoutY="357.0" prefHeight="119.0" prefWidth="287.0" text="Create Your Own Account" textFill="WHITE" wrapText="true">
-                     <font>
-                        <Font name="Microsoft JhengHei UI Light" size="33.0" />
-                     </font>
-                  </Label>
-                  <JFXButton layoutX="131.0" layoutY="467.0" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;" text="ABOUT US" textFill="#7d01ae" />
-                  <JFXButton layoutX="282.0" layoutY="467.0" prefHeight="41.0" prefWidth="123.0" style="-fx-border-color: #fff; -fx-border-radius: 10px;" text="SIGNIN" textFill="WHITE" />
+                  <Pane layoutX="127.0" layoutY="357.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="127.0">
+                     <children>
+                        <Label prefHeight="119.0" prefWidth="289.0" styleClass="title" stylesheets="@styles.css" text="Create Your Own Account" textFill="WHITE" wrapText="true">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="33.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </Label>
+                        <JFXButton layoutX="4.0" layoutY="127.0" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;" text="ABOUT US" textFill="#b27e63" />
+                        <JFXButton layoutX="149.0" layoutY="128.0" prefHeight="41.0" prefWidth="123.0" style="-fx-border-color: #fff; -fx-border-radius: 10px;" text="SIGNIN" textFill="WHITE" />
+                     </children>
+                  </Pane>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="250.0" prefHeight="160.0" prefWidth="100.0">
+          <AnchorPane minHeight="0.0" minWidth="350.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <VBox layoutX="-16.0" layoutY="-12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <JFXTextField focusColor="WHITE" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="FIRST NAME" style="-fx-text-fill: #fff;" unFocusColor="#d7d7d7">
+                        <Label fx:id="logoLabel" alignment="CENTER" prefHeight="88.0" prefWidth="89.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;" text="M" textFill="#b27e63">
+                           <font>
+                              <Font name="Microsoft JhengHei UI Light" size="39.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="FIRST NAME" unFocusColor="#d7d7d7">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="LAST NAME" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </JFXTextField>
-                        <JFXTextField focusColor="#9140a8" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="LAST NAME" style="-fx-text-fill: #fff;" unFocusColor="#d7d7d7">
+                        <JFXTextField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="E-MAIL" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </JFXTextField>
-                        <JFXTextField focusColor="#9140a8" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="USERNAME" style="-fx-text-fill: #fff;" unFocusColor="#d7d7d7">
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </JFXTextField>
-                        <JFXTextField focusColor="#9140a8" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="E-MAIL" style="-fx-text-fill: #fff;" unFocusColor="#d7d7d7">
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </JFXTextField>
-                        <JFXPasswordField focusColor="#9a40a8" labelFloat="true" maxWidth="259.0" minWidth="259.0" prefHeight="31.0" prefWidth="259.0" promptText="PASSWORD" style="-fx-text-fill: #fff;" unFocusColor="#d7d7d7">
+                        <JFXPasswordField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="259.0" prefHeight="31.0" prefWidth="259.0" promptText="PASSWORD" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </JFXPasswordField>
-                        <JFXPasswordField focusColor="#9a40a8" labelFloat="true" maxWidth="259.0" minWidth="259.0" prefHeight="31.0" prefWidth="259.0" promptText="PASSWORD" style="-fx-text-fill: #fff;" unFocusColor="#d7d7d7">
+                        <JFXPasswordField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="259.0" prefHeight="31.0" prefWidth="259.0" promptText="REPEAT PASSWORD" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </JFXPasswordField>
-                        <JFXTextField focusColor="#9140a8" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="PHONE NUMBER" style="-fx-text-fill: #fff;" unFocusColor="#d7d7d7">
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </JFXTextField>
-                        <JFXToggleButton text="UNDER 18 ?" textFill="#6b6b6b" toggleColor="#7d008f">
+                     </children>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </VBox>
+                  <HBox layoutX="89.0" layoutY="477.0" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="75.0">
+                     <children>
+                        <JFXToggleButton text="UNDER 18 ?" textFill="#6b6b6b" toggleColor="#b27e63">
                            <font>
                               <Font size="13.0" />
                            </font>
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
                         </JFXToggleButton>
-                        <JFXButton onAction="#showSendProfile" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;" text="GET STARTED" textFill="#7d01ae">
-                           <VBox.margin>
-                              <Insets top="50.0" />
-                           </VBox.margin>
+                        <JFXButton onAction="#showSendProfile" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10px; -fx-border-color: B27E63; -fx-border-radius: 10px;" text="GET STARTED" textFill="#b27e63">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
                         </JFXButton>
                      </children>
-                     <padding>
-                        <Insets left="20.0" top="20.0" />
-                     </padding>
-                  </VBox>
+                  </HBox>
                </children>
             </AnchorPane>
         </items>
