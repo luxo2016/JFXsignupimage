@@ -15,16 +15,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <ImageView fitHeight="500.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="450.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@boy.png" />
+            <Image url="@freesolo.png" />
          </image>
       </ImageView>
-      <SplitPane dividerPositions="0.5" prefHeight="562.0" prefWidth="946.0" style="-fx-background-color: #7d01ae00;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.5" prefHeight="562.0" prefWidth="946.0" style="-fx-background-color: #ffffff00;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="500.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #B27E63CC;">
+          <AnchorPane minHeight="0.0" minWidth="500.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #B27E63aa;">
                <children>
                   <Pane layoutX="127.0" layoutY="357.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="127.0">
                      <children>
@@ -44,34 +44,37 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="350.0" prefHeight="160.0" prefWidth="100.0">
                <children>
-                  <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label fx:id="logoLabel" alignment="CENTER" prefHeight="88.0" prefWidth="89.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;" text="M" textFill="#b27e63">
+                        <Label fx:id="logoLabel" alignment="CENTER" prefHeight="88.0" prefWidth="89.0" style="-fx-background-color: #fff; -fx-background-radius: 50px;" text="M" textFill="#ff4081">
                            <font>
                               <Font name="Microsoft JhengHei UI Light" size="39.0" />
                            </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="50.0" />
+                           </VBox.margin>
                         </Label>
-                        <JFXTextField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="FIRST NAME" unFocusColor="#d7d7d7">
+                        <JFXTextField focusColor="#ff4081" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="FIRST NAME" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </JFXTextField>
-                        <JFXTextField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="LAST NAME" unFocusColor="#d7d7d7">
+                        <JFXTextField focusColor="#ff4081" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="LAST NAME" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </JFXTextField>
-                        <JFXTextField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="E-MAIL" unFocusColor="#d7d7d7">
+                        <JFXTextField focusColor="#ff4081" labelFloat="true" maxWidth="259.0" minWidth="210.0" prefHeight="31.0" prefWidth="259.0" promptText="E-MAIL" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </JFXTextField>
-                        <JFXPasswordField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="259.0" prefHeight="31.0" prefWidth="259.0" promptText="PASSWORD" unFocusColor="#d7d7d7">
+                        <JFXPasswordField focusColor="#ff4081" labelFloat="true" maxWidth="259.0" minWidth="259.0" prefHeight="31.0" prefWidth="259.0" promptText="PASSWORD" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </JFXPasswordField>
-                        <JFXPasswordField focusColor="#b27e63" labelFloat="true" maxWidth="259.0" minWidth="259.0" prefHeight="31.0" prefWidth="259.0" promptText="REPEAT PASSWORD" unFocusColor="#d7d7d7">
+                        <JFXPasswordField focusColor="#ff4081" labelFloat="true" maxWidth="259.0" minWidth="259.0" prefHeight="31.0" prefWidth="259.0" promptText="REPEAT PASSWORD" unFocusColor="#d7d7d7">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
@@ -83,7 +86,7 @@
                   </VBox>
                   <HBox layoutX="89.0" layoutY="477.0" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="75.0">
                      <children>
-                        <JFXToggleButton text="UNDER 18 ?" textFill="#6b6b6b" toggleColor="#b27e63">
+                        <JFXToggleButton text="UNDER 18 ?" textFill="#6b6b6b" toggleColor="#ff4081">
                            <font>
                               <Font size="13.0" />
                            </font>
