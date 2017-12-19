@@ -5,6 +5,7 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.image.Image?>
@@ -24,7 +25,7 @@
       </ImageView>
       <SplitPane dividerPositions="0.5" prefHeight="562.0" prefWidth="946.0" style="-fx-background-color: #ffffff00;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="500.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #B27E63aa;">
+          <AnchorPane minHeight="0.0" minWidth="500.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #B27E6377;">
                <children>
                   <Pane layoutX="127.0" layoutY="357.0" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="127.0">
                      <children>
@@ -95,6 +96,9 @@
                            <HBox.margin>
                               <Insets top="10.0" />
                            </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </JFXButton>
                      </children>
                   </HBox>
