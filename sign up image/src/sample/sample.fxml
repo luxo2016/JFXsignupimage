@@ -20,7 +20,7 @@
             <Image url="@nikhil-kumar-231465.jpg" />
          </image>
       </ImageView>
-      <Pane prefHeight="562.0" prefWidth="650.0" style="-fx-background-color: #7d01aeaa;">
+      <Pane prefHeight="562.0" prefWidth="642.0" style="-fx-background-color: #7d01aeaa;">
          <children>
             <JFXButton layoutX="51.0" layoutY="294.0" prefHeight="41.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" text="ABOUT US" textFill="#7d01ae" />
             <JFXButton layoutX="187.0" layoutY="294.0" prefHeight="41.0" prefWidth="123.0" style="-fx-border-color: #fff; -fx-border-radius: 10;" text="SIGNIN" textFill="WHITE" />
