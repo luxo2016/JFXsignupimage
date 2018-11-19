@@ -45,7 +45,7 @@
                   <Font size="13.0" />
                </font>
             </JFXToggleButton>
-            <JFXButton buttonType="RAISED" prefHeight="41.0" prefWidth="140.0" ripplerFill="#bf78c2" style="-fx-border-color: #8000a4; -fx-border-radius: 10px;" text="GET STARTED" textFill="#8000a4" />
+            <JFXButton buttonType="RAISED" prefHeight="41.0" prefWidth="140.0" ripplerFill="#bf78c2" style="-fx-border-color: #8000a4; -fx-border-radius: 10px; -fx-border-width: 0.5;" text="GET STARTED" textFill="#8000a4" />
          </children>
          <padding>
             <Insets top="50.0" />
