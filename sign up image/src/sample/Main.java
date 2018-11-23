@@ -4,7 +4,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -16,7 +15,7 @@ public class Main extends Application {
         AnchorPane pane=loader.load();
         Scene scene=new Scene(pane);
         primaryStage.setScene(scene);
-        Font.loadFont(getClass().getResourceAsStream("PoiretOne-Regular.ttf"), 20);
+//        Font.loadFont(getClass().getResourceAsStream("PoiretOne-Regular.ttf"), 20);
         primaryStage.show();
 
     }
